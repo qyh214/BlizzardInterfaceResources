@@ -1,4 +1,15 @@
 Enum = {
+	AnimaDiversionNodeState = {
+		Unavailable = 0,
+		Available = 1,
+		SelectedTemporary = 2,
+		SelectedPermanent = 3,
+	},
+	AnimaDiversionNodeStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
 		Quantity = 1,
@@ -51,11 +62,12 @@ Enum = {
 		Level = 2,
 		Bid = 3,
 		Buyout = 4,
+		TimeRemaining = 5,
 	},
 	AuctionHouseSortOrderMeta = {
 		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
+		MaxValue = 5,
+		NumValues = 6,
 	},
 	AuctionHouseTimeLeftBand = {
 		Short = 0,
@@ -123,11 +135,6 @@ Enum = {
 		NumValues = 5,
 		MaxValue = 16,
 	},
-	BattlepaySpecialProductsMeta = {
-		NumValues = 1,
-		MinValue = 12,
-		MaxValue = 12,
-	},
 	BrawlType = {
 		None = 0,
 		Battleground = 1,
@@ -135,6 +142,17 @@ Enum = {
 		Lfg = 3,
 	},
 	BrawlTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	CachedRewardType = {
+		None = 0,
+		Item = 1,
+		Currency = 2,
+		Quest = 3,
+	},
+	CachedRewardTypeMeta = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
@@ -252,7 +270,7 @@ Enum = {
 	CalendarEventType = {
 		Raid = 0,
 		Dungeon = 1,
-		Pvp = 2,
+		PvP = 2,
 		Meeting = 3,
 		Other = 4,
 		HeroicDeprecated = 5,
@@ -383,6 +401,27 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
+	CallingStates = {
+		QuestOffer = 0,
+		QuestActive = 1,
+		QuestCompleted = 2,
+	},
+	CallingStatesMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	CampaignState = {
+		Invalid = 0,
+		Complete = 1,
+		InProgress = 2,
+		Stalled = 3,
+	},
+	CampaignStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	CaptureBarWidgetFillDirectionType = {
 		RightToLeft = 0,
 		LeftToRight = 1,
@@ -409,12 +448,44 @@ Enum = {
 		MinValue = 1,
 		MaxValue = 1,
 	},
+	ChatChannelRuleset = {
+		None = 0,
+		Mentor = 1,
+	},
+	ChatChannelRulesetMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	ChatChannelType = {
 		None = 0,
 		Custom = 1,
 		Private_Party = 2,
 		Public_Party = 3,
 		Communities = 4,
+	},
+	ChatChannelTypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	ChrCustomizationCategoryFlag = {
+		UndressModel = 1,
+	},
+	ChrCustomizationCategoryFlagMeta = {
+		NumValues = 1,
+		MinValue = 1,
+		MaxValue = 1,
+	},
+	ChrCustomizationOptionType = {
+		SelectionPopout = 0,
+		Checkbox = 1,
+		Slider = 2,
+	},
+	ChrCustomizationOptionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	ClubActionType = {
 		ErrorClubActionSubscribe = 0,
@@ -575,8 +646,8 @@ Enum = {
 		None = 0,
 		Dungeons = 1,
 		Raids = 2,
-		Pvp = 3,
-		Rp = 4,
+		PvP = 3,
+		RP = 4,
 		Social = 5,
 		Small = 6,
 		Medium = 7,
@@ -781,6 +852,27 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
+	CovenantAbilityType = {
+		Class = 0,
+		Signature = 1,
+	},
+	CovenantAbilityTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	CovenantType = {
+		None = 0,
+		Kyrian = 1,
+		Venthyr = 2,
+		NightFae = 3,
+		Necrolord = 4,
+	},
+	CovenantTypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
 	CustomBindingType = {
 		VoicePushToTalk = 0,
 	},
@@ -788,6 +880,88 @@ Enum = {
 		MaxValue = 0,
 		MinValue = 0,
 		NumValues = 1,
+	},
+	Damageclass = {
+		Physical = 0,
+		MaskPhysical = 1,
+		Holy = 1,
+		AllPhysical = 1,
+		FirstResist = 2,
+		MaskHoly = 2,
+		Fire = 2,
+		MaskHolystrike = 3,
+		Nature = 3,
+		Frost = 4,
+		MaskFire = 4,
+		Shadow = 5,
+		MaskFlamestrike = 5,
+		Arcane = 6,
+		MaskHolyfire = 6,
+		LastResist = 6,
+		MaskNature = 8,
+		MaskStormstrike = 9,
+		MaskHolystorm = 10,
+		MaskFirestorm = 12,
+		MaskFrost = 16,
+		MaskFroststrike = 17,
+		MaskHolyfrost = 18,
+		MaskFrostfire = 20,
+		MaskFroststorm = 24,
+		MaskElemental = 28,
+		MaskShadow = 32,
+		MaskShadowstrike = 33,
+		MaskTwilight = 34,
+		MaskShadowflame = 36,
+		MaskShadowstorm = 40,
+		MaskShadowfrost = 48,
+		MaskChromatic = 62,
+		MaskArcane = 64,
+		MaskSpellstrike = 65,
+		MaskDivine = 66,
+		MaskSpellfire = 68,
+		MaskSpellstorm = 72,
+		MaskSpellfrost = 80,
+		MaskSpellshadow = 96,
+		MaskChaos = 124,
+		AllMagical = 126,
+		MaskMagical = 126,
+		All = 127,
+	},
+	DamageclassMeta = {
+		MinValue = 0,
+		NumValues = 44,
+		MaxValue = 127,
+	},
+	DamageclassType = {
+		Physical = 0,
+		Magical = 1,
+	},
+	DamageclassTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	EnvironmentalDamageFlags = {
+		OneTime = 1,
+		DmgIsPct = 2,
+	},
+	EnvironmentalDamageFlagsMeta = {
+		MinValue = 1,
+		NumValues = 2,
+		MaxValue = 2,
+	},
+	Environmentaldamagetype = {
+		Fatigue = 0,
+		Drowning = 1,
+		Falling = 2,
+		Lava = 3,
+		Slime = 4,
+		Fire = 5,
+	},
+	EnvironmentaldamagetypeMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
 	},
 	FlightPathFaction = {
 		Neutral = 0,
@@ -809,6 +983,152 @@ Enum = {
 		MaxValue = 2,
 		NumValues = 3,
 	},
+	FollowerAbilityCastResult = {
+		Success = 0,
+		Failure = 1,
+		NoPendingCast = 2,
+		InvalidTarget = 3,
+		InvalidFollowerSpell = 4,
+		RerollNotAllowed = 5,
+		SingleMissionDuration = 6,
+		MustTargetFollower = 7,
+		MustTargetTrait = 8,
+		InvalidFollowerType = 9,
+		MustBeUnique = 10,
+		CannotTargetLimitedUseFollower = 11,
+		MustTargetLimitedUseFollower = 12,
+		AlreadyAtMaxDurability = 13,
+		CannotTargetNonAutoMissionFollower = 14,
+	},
+	FollowerAbilityCastResultMeta = {
+		MinValue = 0,
+		MaxValue = 14,
+		NumValues = 15,
+	},
+	GarrAutoBoardIndex = {
+		None = -1,
+		AllyLeftBack = 0,
+		AllyRightBack = 1,
+		AllyLeftFront = 2,
+		AllyCenterFront = 3,
+		AllyRightFront = 4,
+		EnemyLeftFront = 5,
+		EnemyCenterLeftFront = 6,
+		EnemyCenterRightFront = 7,
+		EnemyRightFront = 8,
+		EnemyLeftBack = 9,
+		EnemyCenterLeftBack = 10,
+		EnemyCenterRightBack = 11,
+		EnemyRightBack = 12,
+	},
+	GarrAutoBoardIndexMeta = {
+		MinValue = -1,
+		MaxValue = 12,
+		NumValues = 14,
+	},
+	GarrAutoCombatantRole = {
+		None = 0,
+		Melee = 1,
+		RangedPhysical = 2,
+		RangedMagic = 3,
+		HealSupport = 4,
+		Tank = 5,
+	},
+	GarrAutoCombatantRoleMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	GarrAutoEventFlags = {
+		None = 0,
+		AutoAttack = 1,
+		Passive = 2,
+		Environment = 4,
+	},
+	GarrAutoEventFlagsMeta = {
+		MinValue = 0,
+		NumValues = 4,
+		MaxValue = 4,
+	},
+	GarrAutoMissionEventType = {
+		MeleeDamage = 0,
+		RangeDamage = 1,
+		SpellMeleeDamage = 2,
+		SpellRangeDamage = 3,
+		Heal = 4,
+		PeriodicDamage = 5,
+		PeriodicHeal = 6,
+		ApplyAura = 7,
+		RemoveAura = 8,
+		Died = 9,
+	},
+	GarrAutoMissionEventTypeMeta = {
+		MinValue = 0,
+		MaxValue = 9,
+		NumValues = 10,
+	},
+	GarrFollowerMissionCompleteState = {
+		Alive = 0,
+		KilledByMissionFailure = 1,
+		SavedByPreventDeath = 2,
+		OutOfDurability = 3,
+	},
+	GarrFollowerMissionCompleteStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrFollowerQuality = {
+		Common = 1,
+		Uncommon = 2,
+		Rare = 3,
+		Epic = 4,
+		Legendary = 5,
+		Title = 6,
+	},
+	GarrFollowerQualityMeta = {
+		MinValue = 1,
+		NumValues = 6,
+		MaxValue = 6,
+	},
+	GarrTalentCostType = {
+		Initial = 0,
+		Respec = 1,
+		MakePermanent = 2,
+		TreeReset = 3,
+	},
+	GarrTalentCostTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrTalentFeatureSubtype = {
+		Generic = 0,
+		Bastion = 1,
+		Revendreth = 2,
+		Maldraxxus = 3,
+		Ardenweald = 4,
+	},
+	GarrTalentFeatureSubtypeMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	GarrTalentFeatureType = {
+		Generic = 0,
+		AnimaDiversion = 1,
+		TravelPortals = 2,
+		Adventures = 3,
+		ReservoirUpgrades = 4,
+		SanctumUnique = 5,
+		SoulBinds = 6,
+		AnimaDiversionMap = 7,
+	},
+	GarrTalentFeatureTypeMeta = {
+		MinValue = 0,
+		MaxValue = 7,
+		NumValues = 8,
+	},
 	GarrTalentResearchCostSource = {
 		Talent = 0,
 		Tree = 1,
@@ -817,6 +1137,16 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 1,
 		NumValues = 2,
+	},
+	GarrTalentSocketType = {
+		None = 0,
+		Spell = 1,
+		Conduit = 2,
+	},
+	GarrTalentSocketTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	GarrTalentTreeType = {
 		Tiers = 0,
@@ -831,11 +1161,71 @@ Enum = {
 		Standard = 0,
 		Minor = 1,
 		Major = 2,
+		Socket = 3,
 	},
 	GarrTalentTypeMeta = {
 		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrTalentUI = {
+		Generic = 0,
+		CovenantSanctum = 1,
+		SoulBinds = 2,
+		AnimaDiversionMap = 3,
+	},
+	GarrTalentUIMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	GarrisonFollowerType = {
+		FollowerType_6_0 = 1,
+		FollowerType_6_2 = 2,
+		FollowerType_7_0 = 4,
+		FollowerType_8_0 = 22,
+		FollowerType_9_0 = 123,
+	},
+	GarrisonFollowerTypeMeta = {
+		MinValue = 1,
+		NumValues = 5,
+		MaxValue = 123,
+	},
+	GarrisonTalentAvailability = {
+		Available = 0,
+		Unavailable = 1,
+		UnavailableAnotherIsResearching = 2,
+		UnavailableNotEnoughResources = 3,
+		UnavailableNotEnoughGold = 4,
+		UnavailableTierUnavailable = 5,
+		UnavailablePlayerCondition = 6,
+		UnavailableAlreadyHave = 7,
+		UnavailableRequiresPrerequisiteTalent = 8,
+	},
+	GarrisonTalentAvailabilityMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
+	},
+	GarrisonType = {
+		Type_6_0 = 2,
+		Type_7_0 = 3,
+		Type_8_0 = 9,
+		Type_9_0 = 111,
+	},
+	GarrisonTypeMeta = {
+		MinValue = 2,
+		NumValues = 4,
+		MaxValue = 111,
+	},
+	HolidayCalendarFlags = {
+		Alliance = 1,
+		Horde = 2,
+	},
+	HolidayCalendarFlagsMeta = {
+		MinValue = 1,
+		NumValues = 2,
 		MaxValue = 2,
-		NumValues = 3,
 	},
 	HolidayFlags = {
 		IsRegionwide = 1,
@@ -925,9 +1315,9 @@ Enum = {
 	},
 	ItemQuality = {
 		Poor = 0,
-		Standard = 1,
-		Good = 2,
-		Superior = 3,
+		Common = 1,
+		Uncommon = 2,
+		Rare = 3,
 		Epic = 4,
 		Legendary = 5,
 		Artifact = 6,
@@ -938,6 +1328,29 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 8,
 		NumValues = 9,
+	},
+	ItemSlotFilterType = {
+		Head = 0,
+		Neck = 1,
+		Shoulder = 2,
+		Cloak = 3,
+		Chest = 4,
+		Wrist = 5,
+		Hand = 6,
+		Waist = 7,
+		Legs = 8,
+		Feet = 9,
+		MainHand = 10,
+		OffHand = 11,
+		Finger = 12,
+		Trinket = 13,
+		Other = 14,
+		NoFilter = 15,
+	},
+	ItemSlotFilterTypeMeta = {
+		MinValue = 0,
+		MaxValue = 15,
+		NumValues = 16,
 	},
 	ItemTryOnReason = {
 		Success = 0,
@@ -973,6 +1386,19 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
+	MapOverlayDisplayLocation = {
+		Default = 0,
+		BottomLeft = 1,
+		TopLeft = 2,
+		BottomRight = 3,
+		TopRight = 4,
+		Hidden = 5,
+	},
+	MapOverlayDisplayLocationMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
 	ModelSceneSetting = {
 		AlignLightToOrbitDelta = 1,
 	},
@@ -992,19 +1418,39 @@ Enum = {
 		ArtifactTier2SlamEffect = 7,
 		CommentatorVictoryFanfare = 8,
 		ArtifactRelicTalentEffect = 9,
-		PvpWarModeOrb = 10,
-		PvpWarModeFire = 11,
+		PvPWarModeOrb = 10,
+		PvPWarModeFire = 11,
 		PartyPose = 12,
 		AzeriteItemLevelUpToast = 13,
 		AzeritePowers = 14,
 		AzeriteRewardGlow = 15,
 		HeartOfAzeroth = 16,
 		WorldMapThreat = 17,
+		Soulbinds = 18,
+		JailersTowerAnimaGlow = 19,
 	},
 	ModelSceneTypeMeta = {
 		MinValue = 0,
-		MaxValue = 17,
-		NumValues = 18,
+		MaxValue = 19,
+		NumValues = 20,
+	},
+	NavigationState = {
+		Invalid = 0,
+		Occluded = 1,
+		InRange = 2,
+	},
+	NavigationStateMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	OptionalReagentItemFlag = {
+		TooltipShowsAsStatModifications = 0,
+	},
+	OptionalReagentItemFlagMeta = {
+		MaxValue = 0,
+		MinValue = 0,
+		NumValues = 1,
 	},
 	PartyRequestJoinRelation = {
 		None = 0,
@@ -1025,11 +1471,23 @@ Enum = {
 		InvalidFaction = 3,
 		NoFavoritesToSummon = 4,
 		NoValidRandomSummon = 5,
+		InvalidCovenant = 6,
 	},
 	PetJournalErrorMeta = {
 		MinValue = 0,
-		MaxValue = 5,
-		NumValues = 6,
+		MaxValue = 6,
+		NumValues = 7,
+	},
+	PlayerChoiceRarity = {
+		Common = 0,
+		Uncommon = 1,
+		Rare = 2,
+		Epic = 3,
+	},
+	PlayerChoiceRarityMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	PlayerClubRequestStatus = {
 		None = 0,
@@ -1045,6 +1503,26 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 7,
 		NumValues = 8,
+	},
+	PlayerMentorshipApplicationResult = {
+		Success = 0,
+		AlreadyMentor = 1,
+		Ineligible = 2,
+	},
+	PlayerMentorshipApplicationResultMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
+	PlayerMentorshipStatus = {
+		None = 0,
+		Newcomer = 1,
+		Mentor = 2,
+	},
+	PlayerMentorshipStatusMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	PowerType = {
 		HealthCost = -2,
@@ -1080,17 +1558,17 @@ Enum = {
 		MaxValue = 5,
 		NumValues = 6,
 	},
-	PvpMatchState = {
+	PvPMatchState = {
 		Inactive = 0,
 		Active = 1,
 		Complete = 2,
 	},
-	PvpMatchStateMeta = {
+	PvPMatchStateMeta = {
 		MinValue = 0,
 		MaxValue = 2,
 		NumValues = 3,
 	},
-	PvpUnitClassification = {
+	PvPUnitClassification = {
 		FlagCarrierHorde = 0,
 		FlagCarrierAlliance = 1,
 		FlagCarrierNeutral = 2,
@@ -1103,10 +1581,20 @@ Enum = {
 		OrbCarrierOrange = 9,
 		OrbCarrierPurple = 10,
 	},
-	PvpUnitClassificationMeta = {
+	PvPUnitClassificationMeta = {
 		MinValue = 0,
 		MaxValue = 10,
 		NumValues = 11,
+	},
+	QuestFrequency = {
+		Default = 0,
+		Daily = 1,
+		Weekly = 2,
+	},
+	QuestFrequencyMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	QuestLineFloorLocation = {
 		Above = 0,
@@ -1117,6 +1605,11 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 2,
 		NumValues = 3,
+	},
+	QuestPOIQuestTypes = {
+		Normal = 1,
+		Campaign = 2,
+		Calling = 3,
 	},
 	QuestSessionCommand = {
 		None = 0,
@@ -1170,7 +1663,7 @@ Enum = {
 	},
 	QuestTag = {
 		Group = 1,
-		Pvp = 41,
+		PvP = 41,
 		Raid = 62,
 		Dungeon = 81,
 		Legendary = 83,
@@ -1185,6 +1678,38 @@ Enum = {
 		MinValue = 1,
 		NumValues = 11,
 		MaxValue = 266,
+	},
+	QuestTagType = {
+		Tag = 0,
+		Profession = 1,
+		Normal = 2,
+		PvP = 3,
+		PetBattle = 4,
+		Bounty = 5,
+		Dungeon = 6,
+		Invasion = 7,
+		Raid = 8,
+		Contribution = 9,
+		RatedReward = 10,
+		InvasionWrapper = 11,
+		FactionAssault = 12,
+		Islands = 13,
+		Threat = 14,
+		CovenantCalling = 15,
+	},
+	QuestTagTypeMeta = {
+		MinValue = 0,
+		MaxValue = 15,
+		NumValues = 16,
+	},
+	QuestWatchType = {
+		Automatic = 0,
+		Manual = 1,
+	},
+	QuestWatchTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	RafLinkType = {
 		None = 0,
@@ -1232,6 +1757,45 @@ Enum = {
 		MaxValue = 7,
 		NumValues = 8,
 	},
+	RelativeContentDifficulty = {
+		Trivial = 0,
+		Easy = 1,
+		Fair = 2,
+		Difficult = 3,
+		Impossible = 4,
+	},
+	RelativeContentDifficultyMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	ScriptedAnimationBehavior = {
+		None = 0,
+		TargetShake = 1,
+		TargetKnockBack = 2,
+		SourceRecoil = 3,
+		SourceCollideWithTarget = 4,
+		UIParentShake = 5,
+	},
+	ScriptedAnimationBehaviorMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	ScriptedAnimationTrajectory = {
+		AtSource = 0,
+		AtTarget = 1,
+		Straight = 2,
+		CurveLeft = 3,
+		CurveRight = 4,
+		CurveRandom = 5,
+		HalfwayBetween = 6,
+	},
+	ScriptedAnimationTrajectoryMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
@@ -1241,14 +1805,50 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	SoulbindConduitInstallResult = {
+		Success = 0,
+		InvalidItem = 1,
+		InvalidConduit = 2,
+		InvalidTalent = 3,
+		DuplicateConduit = 4,
+		ForgeNotInProximity = 5,
+	},
+	SoulbindConduitInstallResultMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	SoulbindConduitType = {
+		Finesse = 0,
+		Potency = 1,
+		Endurance = 2,
+		Flex = 3,
+	},
+	SoulbindConduitTypeMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	SoulbindNodeState = {
+		Unavailable = 0,
+		Unselectable = 1,
+		Selectable = 2,
+		Selected = 3,
+	},
+	SoulbindNodeStateMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	SpellDisplayIconDisplayType = {
 		Buff = 0,
 		Debuff = 1,
+		Circular = 2,
 	},
 	SpellDisplayIconDisplayTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	SpellDisplayIconSizeType = {
 		Small = 0,
@@ -1259,6 +1859,40 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 2,
 		NumValues = 3,
+	},
+	SpellDisplayTextShownStateType = {
+		Shown = 0,
+		Hidden = 1,
+	},
+	SpellDisplayTextShownStateTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	SplashScreenType = {
+		WhatsNew = 0,
+		SeasonRollOver = 1,
+	},
+	SplashScreenTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	StatusBarColorTintValue = {
+		None = 0,
+		Black = 1,
+		White = 2,
+		Red = 3,
+		Yellow = 4,
+		Orange = 5,
+		Purple = 6,
+		Green = 7,
+		Blue = 8,
+	},
+	StatusBarColorTintValueMeta = {
+		MinValue = 0,
+		MaxValue = 8,
+		NumValues = 9,
 	},
 	StatusBarOverrideBarTextShownType = {
 		Never = 0,
@@ -1297,6 +1931,17 @@ Enum = {
 		Declined = 3,
 	},
 	SummonStatusMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	SuperTrackingType = {
+		Quest = 0,
+		UserWaypoint = 1,
+		Corpse = 2,
+		Scenario = 3,
+	},
+	SuperTrackingTypeMeta = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
@@ -1346,6 +1991,15 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	TransmogModification = {
+		None = 0,
+		RightShoulder = 1,
+	},
+	TransmogModificationMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	TransmogSource = {
 		None = 0,
 		JournalEncounter = 1,
@@ -1362,6 +2016,15 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 9,
 		NumValues = 10,
+	},
+	TransmogType = {
+		Appearance = 0,
+		Illusion = 1,
+	},
+	TransmogTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	UIMapSystem = {
 		World = 0,
@@ -1386,6 +2049,47 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
+	},
+	UIWidgetFlag = {
+		UniversalWidget = 1,
+	},
+	UIWidgetFlagMeta = {
+		NumValues = 1,
+		MinValue = 1,
+		MaxValue = 1,
+	},
+	UIWidgetLayoutDirection = {
+		Default = 0,
+		Vertical = 1,
+		Horizontal = 2,
+		Overlap = 3,
+	},
+	UIWidgetLayoutDirectionMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	UIWidgetScale = {
+		OneHundred = 0,
+		Ninty = 1,
+		Eighty = 2,
+		Seventy = 3,
+		Sixty = 4,
+		Fifty = 5,
+	},
+	UIWidgetScaleMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
+	},
+	UIWidgetSetLayoutDirection = {
+		Vertical = 0,
+		Horizontal = 1,
+	},
+	UIWidgetSetLayoutDirectionMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	UIWidgetTextSizeType = {
 		Small = 0,
@@ -1417,19 +2121,23 @@ Enum = {
 		TextureAndTextRow = 15,
 		ZoneControl = 16,
 		CaptureZone = 17,
+		TextureWithAnimation = 18,
+		DiscreteProgressSteps = 19,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 17,
-		NumValues = 18,
+		MaxValue = 19,
+		NumValues = 20,
 	},
-	UiwIdgetFlag = {
-		UniversalWidget = 1,
+	Unitsex = {
+		Male = 0,
+		Female = 1,
+		None = 2,
 	},
-	UiwIdgetFlagMeta = {
-		NumValues = 1,
-		MinValue = 1,
-		MaxValue = 1,
+	UnitsexMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	ValidateNameResult = {
 		NameSuccess = 0,
@@ -1483,7 +2191,7 @@ Enum = {
 	},
 	VignetteType = {
 		Normal = 0,
-		PvpBounty = 1,
+		PvPBounty = 1,
 	},
 	VignetteTypeMeta = {
 		MinValue = 0,
@@ -1521,6 +2229,19 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 24,
 		NumValues = 25,
+	},
+	WeeklyRewardChestThresholdType = {
+		None = 0,
+		MythicPlus = 1,
+		RankedPvP = 2,
+		Raid = 3,
+		AlsoReceive = 4,
+		Concession = 5,
+	},
+	WeeklyRewardChestThresholdTypeMeta = {
+		MinValue = 0,
+		MaxValue = 5,
+		NumValues = 6,
 	},
 	WidgetAnimationType = {
 		None = 0,
@@ -1577,17 +2298,15 @@ Enum = {
 		MaxValue = 9,
 		NumValues = 10,
 	},
-	ZoneAbilityType = {
-		Garrison = 0,
-		OrderHall = 1,
-		Argus = 2,
-		WarEffort = 3,
-		Visions = 4,
+	WorldQuestQuality = {
+		Common = 0,
+		Rare = 1,
+		Epic = 2,
 	},
-	ZoneAbilityTypeMeta = {
+	WorldQuestQualityMeta = {
 		MinValue = 0,
-		MaxValue = 4,
-		NumValues = 5,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	ZoneControlActiveState = {
 		Inactive = 0,
@@ -1719,7 +2438,7 @@ LE_CHARACTER_UPGRADE_RESULT_UPGRADE_PENDING = 10
 LE_CHARACTER_UPGRADE_RESULT_INVALID_CHARACTER = 11
 LE_CHARACTER_UPGRADE_RESULT_NOT_FRESH_CHARACTER = 12
 
-NUM_LE_EXPANSION_LEVELS = 7
+NUM_LE_EXPANSION_LEVELS = 8
 LE_EXPANSION_CLASSIC = 0
 LE_EXPANSION_BURNING_CRUSADE = 1
 LE_EXPANSION_WRATH_OF_THE_LICH_KING = 2
@@ -1727,42 +2446,14 @@ LE_EXPANSION_CATACLYSM = 3
 LE_EXPANSION_MISTS_OF_PANDARIA = 4
 LE_EXPANSION_WARLORDS_OF_DRAENOR = 5
 LE_EXPANSION_LEGION = 6
-LE_EXPANSION_LEVEL_PREVIOUS = 6
 LE_EXPANSION_BATTLE_FOR_AZEROTH = 7
-LE_EXPANSION_LEVEL_CURRENT = 7
-LE_EXPANSION_9_0 = 8
+LE_EXPANSION_LEVEL_PREVIOUS = 7
+LE_EXPANSION_SHADOWLANDS = 8
+LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FOLLOWER_ABILITY_CAST_RESULTS = 14
-LE_FOLLOWER_ABILITY_CAST_RESULT_SUCCESS = 1
-LE_FOLLOWER_ABILITY_CAST_RESULT_FAILURE = 2
-LE_FOLLOWER_ABILITY_CAST_RESULT_NO_PENDING_CAST = 3
-LE_FOLLOWER_ABILITY_CAST_RESULT_INVALID_TARGET = 4
-LE_FOLLOWER_ABILITY_CAST_RESULT_INVALID_FOLLOWER_SPELL = 5
-LE_FOLLOWER_ABILITY_CAST_RESULT_REROLL_NOT_ALLOWED = 6
-LE_FOLLOWER_ABILITY_CAST_RESULT_SINGLE_MISSION_DURATION = 7
-LE_FOLLOWER_ABILITY_CAST_RESULT_MUST_TARGET_FOLLOWER = 8
-LE_FOLLOWER_ABILITY_CAST_RESULT_MUST_TARGET_TRAIT = 9
-LE_FOLLOWER_ABILITY_CAST_RESULT_INVALID_FOLLOWER_TYPE = 10
-LE_FOLLOWER_ABILITY_CAST_RESULT_MUST_BE_UNIQUE = 11
-LE_FOLLOWER_ABILITY_CAST_RESULT_CANNOT_TARGET_LIMITED_USE_FOLLOWER = 12
-LE_FOLLOWER_ABILITY_CAST_RESULT_MUST_TARGET_LIMITED_USE_FOLLOWER = 13
-LE_FOLLOWER_ABILITY_CAST_RESULT_ALREADY_AT_MAX_DURABILITY = 14
-
-NUM_LE_FOLLOWER_MISSION_COMPLETE_STATES = 4
-LE_FOLLOWER_MISSION_COMPLETE_STATE_ALIVE = 1
-LE_FOLLOWER_MISSION_COMPLETE_STATE_DEAD = 2
-LE_FOLLOWER_MISSION_COMPLETE_STATE_SAVED = 3
-LE_FOLLOWER_MISSION_COMPLETE_STATE_OUT_OF_DURABILITY = 4
-
-NUM_LE_FOLLOWER_TYPES = 23
-LE_FOLLOWER_TYPE_GARRISON_6_0 = 1
-LE_FOLLOWER_TYPE_SHIPYARD_6_2 = 2
-LE_FOLLOWER_TYPE_GARRISON_7_0 = 4
-LE_FOLLOWER_TYPE_GARRISON_8_0 = 22
-
-NUM_LE_FRAME_TUTORIALS = 77
+NUM_LE_FRAME_TUTORIALS = 78
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -1840,67 +2531,12 @@ LE_FRAME_TUTORIAL_PVP_SPECIAL_EVENT = 74
 LE_FRAME_TUTORIAL_WORLD_MAP_THREAT_ICON = 75
 LE_FRAME_TUTORIAL_CORRUPTION_CLEANSER = 76
 LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_LANGUAGE_FILTER = 77
+LE_FRAME_TUTORIAL_OPTIONAL_REAGENT_CRAFTING = 78
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
 LE_FRAME_TUTORIAL_ACCCOUNT_CLUB_FINDER_NEW_FEATURE = 2
 LE_FRAME_TUTORIAL_ACCOUNT_CLUB_FINDER_NEW_COMMUNITY_JOINED = 3
-
-NUM_LE_GARRISON_TALENT_AVAILABILITYS = 9
-LE_GARRISON_TALENT_AVAILABILITY_AVAILABLE = 1
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE = 2
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_ANOTHER_IS_RESEARCHING = 3
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_NOT_ENOUGH_RESOURCES = 4
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_NOT_ENOUGH_GOLD = 5
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_TIER_UNAVAILABLE = 6
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_PLAYER_CONDITION = 7
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_ALREADY_HAVE = 8
-LE_GARRISON_TALENT_AVAILABILITY_UNAVAILABLE_REQUIRES_PREREQUISITE_TALENT = 9
-
-NUM_LE_GARRISON_TYPES = 10
-LE_GARRISON_TYPE_6_0 = 2
-LE_GARRISON_TYPE_7_0 = 3
-LE_GARRISON_TYPE_8_0 = 9
-
-NUM_LE_GARR_FOLLOWER_QUALITYS = 7
-LE_GARR_FOLLOWER_QUALITY_NONE = 0
-LE_GARR_FOLLOWER_QUALITY_COMMON = 1
-LE_GARR_FOLLOWER_QUALITY_UNCOMMON = 2
-LE_GARR_FOLLOWER_QUALITY_RARE = 3
-LE_GARR_FOLLOWER_QUALITY_EPIC = 4
-LE_GARR_FOLLOWER_QUALITY_LEGENDARY = 5
-LE_GARR_FOLLOWER_QUALITY_TITLE = 6
-
-NUM_LE_INVENTORY_TYPES = 29
-LE_INVENTORY_TYPE_NON_EQUIP_TYPE = 0
-LE_INVENTORY_TYPE_HEAD_TYPE = 1
-LE_INVENTORY_TYPE_NECK_TYPE = 2
-LE_INVENTORY_TYPE_SHOULDER_TYPE = 3
-LE_INVENTORY_TYPE_BODY_TYPE = 4
-LE_INVENTORY_TYPE_CHEST_TYPE = 5
-LE_INVENTORY_TYPE_WAIST_TYPE = 6
-LE_INVENTORY_TYPE_LEGS_TYPE = 7
-LE_INVENTORY_TYPE_FEET_TYPE = 8
-LE_INVENTORY_TYPE_WRIST_TYPE = 9
-LE_INVENTORY_TYPE_HAND_TYPE = 10
-LE_INVENTORY_TYPE_FINGER_TYPE = 11
-LE_INVENTORY_TYPE_TRINKET_TYPE = 12
-LE_INVENTORY_TYPE_WEAPON_TYPE = 13
-LE_INVENTORY_TYPE_SHIELD_TYPE = 14
-LE_INVENTORY_TYPE_RANGED_TYPE = 15
-LE_INVENTORY_TYPE_CLOAK_TYPE = 16
-LE_INVENTORY_TYPE_2HWEAPON_TYPE = 17
-LE_INVENTORY_TYPE_BAG_TYPE = 18
-LE_INVENTORY_TYPE_TABARD_TYPE = 19
-LE_INVENTORY_TYPE_ROBE_TYPE = 20
-LE_INVENTORY_TYPE_WEAPONMAINHAND_TYPE = 21
-LE_INVENTORY_TYPE_WEAPONOFFHAND_TYPE = 22
-LE_INVENTORY_TYPE_HOLDABLE_TYPE = 23
-LE_INVENTORY_TYPE_AMMO_TYPE = 24
-LE_INVENTORY_TYPE_THROWN_TYPE = 25
-LE_INVENTORY_TYPE_RANGEDRIGHT_TYPE = 26
-LE_INVENTORY_TYPE_QUIVER_TYPE = 27
-LE_INVENTORY_TYPE_RELIC_TYPE = 28
 
 NUM_LE_INVITE_REQUEST_TYPES = 3
 LE_INVITE_CONFIRMATION_REQUEST = 1
@@ -1947,23 +2583,6 @@ LE_ITEM_CLASS_GLYPH = 16
 LE_ITEM_CLASS_BATTLEPET = 17
 LE_ITEM_CLASS_WOW_TOKEN = 18
 
-NUM_LE_ITEM_FILTER_TYPES = 31
-LE_ITEM_FILTER_TYPE_HEAD = 1
-LE_ITEM_FILTER_TYPE_NECK = 2
-LE_ITEM_FILTER_TYPE_SHOULDER = 3
-LE_ITEM_FILTER_TYPE_CHEST = 5
-LE_ITEM_FILTER_TYPE_WAIST = 6
-LE_ITEM_FILTER_TYPE_LEGS = 7
-LE_ITEM_FILTER_TYPE_FEET = 8
-LE_ITEM_FILTER_TYPE_WRIST = 9
-LE_ITEM_FILTER_TYPE_HAND = 10
-LE_ITEM_FILTER_TYPE_FINGER = 11
-LE_ITEM_FILTER_TYPE_TRINKET = 12
-LE_ITEM_FILTER_TYPE_CLOAK = 16
-LE_ITEM_FILTER_TYPE_MAIN_HAND = 21
-LE_ITEM_FILTER_TYPE_OFF_HAND = 22
-LE_ITEM_FILTER_TYPE_ARTIFACT_RELIC = 30
-
 NUM_LE_ITEM_GEMS = 12
 LE_ITEM_GEM_INTELLECT = 0
 LE_ITEM_GEM_AGILITY = 1
@@ -1985,17 +2604,6 @@ LE_ITEM_MISCELLANEOUS_HOLIDAY = 3
 LE_ITEM_MISCELLANEOUS_OTHER = 4
 LE_ITEM_MISCELLANEOUS_MOUNT = 5
 LE_ITEM_MISCELLANEOUS_MOUNT_EQUIPMENT = 6
-
-NUM_LE_ITEM_QUALITYS = 9
-LE_ITEM_QUALITY_POOR = 0
-LE_ITEM_QUALITY_COMMON = 1
-LE_ITEM_QUALITY_UNCOMMON = 2
-LE_ITEM_QUALITY_RARE = 3
-LE_ITEM_QUALITY_EPIC = 4
-LE_ITEM_QUALITY_LEGENDARY = 5
-LE_ITEM_QUALITY_ARTIFACT = 6
-LE_ITEM_QUALITY_HEIRLOOM = 7
-LE_ITEM_QUALITY_WOW_TOKEN = 8
 
 NUM_LE_ITEM_RECIPES = 12
 LE_ITEM_RECIPE_BOOK = 0
@@ -2063,14 +2671,6 @@ LE_LOOT_FILTER_SPEC3 = 5
 LE_LOOT_FILTER_SPEC4 = 6
 LE_LOOT_FILTER_BOE = 7
 
-NUM_LE_MAP_OVERLAY_DISPLAY_LOCATIONS = 6
-LE_MAP_OVERLAY_DISPLAY_LOCATION_DEFAULT = 1
-LE_MAP_OVERLAY_DISPLAY_LOCATION_BOTTOM_LEFT = 2
-LE_MAP_OVERLAY_DISPLAY_LOCATION_TOP_LEFT = 3
-LE_MAP_OVERLAY_DISPLAY_LOCATION_BOTTOM_RIGHT = 4
-LE_MAP_OVERLAY_DISPLAY_LOCATION_TOP_RIGHT = 5
-LE_MAP_OVERLAY_DISPLAY_LOCATION_HIDDEN = 6
-
 NUM_LE_MODEL_BLEND_OPERATIONS = 2
 LE_MODEL_BLEND_OPERATION_NONE = 1
 LE_MODEL_BLEND_OPERATION_ANIM = 2
@@ -2117,26 +2717,6 @@ LE_PET_JOURNAL_FILTER_NOT_COLLECTED = 2
 NUM_LE_QUEST_FACTIONS = 2
 LE_QUEST_FACTION_ALLIANCE = 1
 LE_QUEST_FACTION_HORDE = 2
-
-NUM_LE_QUEST_FREQUENCYS = 3
-LE_QUEST_FREQUENCY_DEFAULT = 1
-LE_QUEST_FREQUENCY_DAILY = 2
-LE_QUEST_FREQUENCY_WEEKLY = 3
-
-NUM_LE_QUEST_TAG_TYPES = 15
-LE_QUEST_TAG_TYPE_TAG = 0
-LE_QUEST_TAG_TYPE_PROFESSION = 1
-LE_QUEST_TAG_TYPE_NORMAL = 2
-LE_QUEST_TAG_TYPE_PVP = 3
-LE_QUEST_TAG_TYPE_PET_BATTLE = 4
-LE_QUEST_TAG_TYPE_BOUNTY = 5
-LE_QUEST_TAG_TYPE_DUNGEON = 6
-LE_QUEST_TAG_TYPE_INVASION = 7
-LE_QUEST_TAG_TYPE_RAID = 8
-LE_QUEST_TAG_TYPE_INVASION_WRAPPER = 11
-LE_QUEST_TAG_TYPE_FACTION_ASSAULT = 12
-LE_QUEST_TAG_TYPE_ISLANDS = 13
-LE_QUEST_TAG_TYPE_THREAT = 14
 
 NUM_LE_REALM_RELATIONS = 3
 LE_REALM_RELATION_SAME = 1
@@ -2245,10 +2825,6 @@ LE_TRANSMOG_SET_FILTER_UNCOLLECTED = 2
 LE_TRANSMOG_SET_FILTER_PVE = 3
 LE_TRANSMOG_SET_FILTER_PVP = 4
 
-NUM_LE_TRANSMOG_TYPES = 2
-LE_TRANSMOG_TYPE_APPEARANCE = 0
-LE_TRANSMOG_TYPE_ILLUSION = 1
-
 NUM_LE_TWITTER_RESULTS = 3
 LE_TWITTER_RESULT_SUCCESS = 1
 LE_TWITTER_RESULT_NOT_LINKED = 2
@@ -2273,11 +2849,6 @@ NUM_LE_WORLD_ELAPSED_TIMER_TYPES = 3
 LE_WORLD_ELAPSED_TIMER_TYPE_NONE = 1
 LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE = 2
 LE_WORLD_ELAPSED_TIMER_TYPE_PROVING_GROUND = 3
-
-NUM_LE_WORLD_QUEST_QUALITYS = 3
-LE_WORLD_QUEST_QUALITY_COMMON = 1
-LE_WORLD_QUEST_QUALITY_RARE = 2
-LE_WORLD_QUEST_QUALITY_EPIC = 3
 
 NUM_LE_WOW_CONNECTION_STATES = 3
 LE_WOW_CONNECTION_STATE_NONE = 1
