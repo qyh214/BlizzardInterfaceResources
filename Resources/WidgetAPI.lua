@@ -839,6 +839,7 @@ local WidgetAPI = {
 			"SetRuneforgeResultItem",
 			"SetSendMailItem",
 			"SetShapeshift",
+			"SetShrinkToFitWrapped",
 			"SetSocketGem",
 			"SetSocketedItem",
 			"SetSocketedRelic",

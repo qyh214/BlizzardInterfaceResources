@@ -99,6 +99,7 @@ local Frames = {
 	"ContainerFrame9",
 	"CreateChannelPopup",
 	"CustomGossipFrameManager",
+	"CustomizationDebugFrame",
 	"DeathKnightResourceOverlayFrame",
 	"DestinyFrame",
 	"DeveloperConsole",
