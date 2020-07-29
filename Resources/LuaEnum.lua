@@ -770,6 +770,16 @@ Enum = {
 		MaxValue = 1,
 		NumValues = 2,
 	},
+	ConquestProgressBarDisplayType = {
+		FirstChest = 0,
+		AdditionalChest = 1,
+		Seasonal = 2,
+	},
+	ConquestProgressBarDisplayTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
+	},
 	ConsoleCategory = {
 		Debug = 0,
 		Graphics = 1,
@@ -1218,6 +1228,26 @@ Enum = {
 		NumValues = 4,
 		MaxValue = 111,
 	},
+	GossipOptionRewardType = {
+		Item = 0,
+		Currency = 1,
+	},
+	GossipOptionRewardTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
+	GossipOptionStatus = {
+		Available = 0,
+		Unavailable = 1,
+		Locked = 2,
+		AlreadyComplete = 3,
+	},
+	GossipOptionStatusMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	HolidayCalendarFlags = {
 		Alliance = 1,
 		Horde = 2,
@@ -1477,6 +1507,17 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 6,
 		NumValues = 7,
+	},
+	PhaseReason = {
+		Phasing = 0,
+		Sharding = 1,
+		WarMode = 2,
+		ChromieTime = 3,
+	},
+	PhaseReasonMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	PlayerChoiceRarity = {
 		Common = 0,
@@ -2124,11 +2165,12 @@ Enum = {
 		CaptureZone = 17,
 		TextureWithAnimation = 18,
 		DiscreteProgressSteps = 19,
+		ScenarioHeaderTimer = 20,
 	},
 	UIWidgetVisualizationTypeMeta = {
 		MinValue = 0,
-		MaxValue = 19,
-		NumValues = 20,
+		MaxValue = 20,
+		NumValues = 21,
 	},
 	Unitsex = {
 		Male = 0,
@@ -2454,7 +2496,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 79
+NUM_LE_FRAME_TUTORIALS = 81
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2534,6 +2576,8 @@ LE_FRAME_TUTORIAL_CORRUPTION_CLEANSER = 76
 LE_FRAME_TUTORIAL_CLUB_FINDER_NEW_LANGUAGE_FILTER = 77
 LE_FRAME_TUTORIAL_OPTIONAL_REAGENT_CRAFTING = 78
 LE_FRAME_TUTORIAL_CAMPAIGN_LORE_TEXT = 79
+LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION = 80
+LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION_REMINDER = 81
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
