@@ -97,6 +97,7 @@ local Frames = {
 	"ContainerFrame7",
 	"ContainerFrame8",
 	"ContainerFrame9",
+	"CovenantChoiceToast",
 	"CreateChannelPopup",
 	"CustomGossipFrameManager",
 	"CustomizationDebugFrame",

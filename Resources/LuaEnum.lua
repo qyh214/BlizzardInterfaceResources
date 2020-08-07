@@ -1837,6 +1837,13 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
+	ScriptedAnimationTransformation = {
+		Alpha = 1,
+	},
+	ScriptedAnimationTransformationTiming = {
+		BeginWithEffect = 1,
+		FinishWithEffect = 2,
+	},
 	SelfResurrectOptionType = {
 		Spell = 0,
 		Item = 1,
@@ -1872,7 +1879,7 @@ Enum = {
 	},
 	SoulbindNodeState = {
 		Unavailable = 0,
-		Unselectable = 1,
+		Unselected = 1,
 		Selectable = 2,
 		Selected = 3,
 	},
@@ -2496,7 +2503,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 81
+NUM_LE_FRAME_TUTORIALS = 82
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2578,6 +2585,7 @@ LE_FRAME_TUTORIAL_OPTIONAL_REAGENT_CRAFTING = 78
 LE_FRAME_TUTORIAL_CAMPAIGN_LORE_TEXT = 79
 LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION = 80
 LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION_REMINDER = 81
+LE_FRAME_TUTORIAL_RUNEFORGE_LEGENDARY_CRAFT = 82
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
