@@ -135,6 +135,8 @@ local Frames = {
 	"GarrisonShipyardFollowerTooltip",
 	"GeneralDockManager",
 	"GhostFrame",
+	"GlobalFXBackgroundModelScene",
+	"GlobalFXOverlayModelScene",
 	"GossipFrame",
 	"GroupLootContainer",
 	"GroupLootDropDown",
