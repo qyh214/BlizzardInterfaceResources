@@ -1405,6 +1405,20 @@ Enum = {
 		MaxValue = 3,
 		NumValues = 4,
 	},
+	JailersTowerType = {
+		TwistingCorridors = 0,
+		SkoldusHalls = 1,
+		FractureChambers = 2,
+		Soulforges = 3,
+		Coldheart = 4,
+		Mortregar = 5,
+		UpperReaches = 6,
+	},
+	JailersTowerTypeMeta = {
+		MinValue = 0,
+		MaxValue = 6,
+		NumValues = 7,
+	},
 	ManipulatorEventType = {
 		Start = 0,
 		Move = 1,
@@ -1985,6 +1999,15 @@ Enum = {
 		MaxValue = 12,
 		NumValues = 13,
 	},
+	SubscriptionInterstitialResponseType = {
+		Clicked = 0,
+		Closed = 1,
+	},
+	SubscriptionInterstitialResponseTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	SubscriptionInterstitialType = {
 		Standard = 0,
 		LeftNpeArea = 1,
@@ -2061,6 +2084,42 @@ Enum = {
 		MinValue = 0,
 		MaxValue = 3,
 		NumValues = 4,
+	},
+	TransmogCollectionType = {
+		Head = 0,
+		Shoulder = 1,
+		Back = 2,
+		Chest = 3,
+		Shirt = 4,
+		Tabard = 5,
+		Wrist = 6,
+		Hands = 7,
+		Waist = 8,
+		Legs = 9,
+		Feet = 10,
+		Wand = 11,
+		OneHAxe = 12,
+		OneHSword = 13,
+		OneHMace = 14,
+		Dagger = 15,
+		Fist = 16,
+		Shield = 17,
+		Holdable = 18,
+		TwoHAxe = 19,
+		TwoHSword = 20,
+		TwoHMace = 21,
+		Staff = 22,
+		Polearm = 23,
+		Bow = 24,
+		Gun = 25,
+		Crossbow = 26,
+		Warglaives = 27,
+		Paired = 28,
+	},
+	TransmogCollectionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 28,
+		NumValues = 29,
 	},
 	TransmogModification = {
 		None = 0,
@@ -2156,6 +2215,16 @@ Enum = {
 		NumValues = 1,
 		MinValue = 1,
 		MaxValue = 1,
+	},
+	UIWidgetFontType = {
+		Normal = 0,
+		Shadow = 1,
+		Outline = 2,
+	},
+	UIWidgetFontTypeMeta = {
+		MinValue = 0,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	UIWidgetLayoutDirection = {
 		Default = 0,
@@ -2267,8 +2336,8 @@ Enum = {
 	},
 	VasErrorMeta = {
 		MinValue = 4,
-		NumValues = 39,
-		MaxValue = 20086,
+		NumValues = 40,
+		MaxValue = 20088,
 	},
 	VasPurchaseProgress = {
 		Invalid = 0,
@@ -2293,11 +2362,12 @@ Enum = {
 	VignetteType = {
 		Normal = 0,
 		PvPBounty = 1,
+		Torghast = 2,
 	},
 	VignetteTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	VoiceChatStatusCode = {
 		Success = 0,
@@ -2887,37 +2957,6 @@ LE_TRACKER_SORTING_MANUAL = 1
 LE_TRACKER_SORTING_PROXIMITY = 2
 LE_TRACKER_SORTING_DIFFICULTY_LOW = 3
 LE_TRACKER_SORTING_DIFFICULTY_HIGH = 4
-
-NUM_LE_TRANSMOG_COLLECTION_TYPES = 29
-LE_TRANSMOG_COLLECTION_TYPE_HEAD = 1
-LE_TRANSMOG_COLLECTION_TYPE_SHOULDER = 2
-LE_TRANSMOG_COLLECTION_TYPE_BACK = 3
-LE_TRANSMOG_COLLECTION_TYPE_CHEST = 4
-LE_TRANSMOG_COLLECTION_TYPE_SHIRT = 5
-LE_TRANSMOG_COLLECTION_TYPE_TABARD = 6
-LE_TRANSMOG_COLLECTION_TYPE_WRIST = 7
-LE_TRANSMOG_COLLECTION_TYPE_HANDS = 8
-LE_TRANSMOG_COLLECTION_TYPE_WAIST = 9
-LE_TRANSMOG_COLLECTION_TYPE_LEGS = 10
-LE_TRANSMOG_COLLECTION_TYPE_FEET = 11
-LE_TRANSMOG_COLLECTION_TYPE_WAND = 12
-LE_TRANSMOG_COLLECTION_TYPE_1H_AXE = 13
-LE_TRANSMOG_COLLECTION_TYPE_1H_SWORD = 14
-LE_TRANSMOG_COLLECTION_TYPE_1H_MACE = 15
-LE_TRANSMOG_COLLECTION_TYPE_DAGGER = 16
-LE_TRANSMOG_COLLECTION_TYPE_FIST = 17
-LE_TRANSMOG_COLLECTION_TYPE_SHIELD = 18
-LE_TRANSMOG_COLLECTION_TYPE_HOLDABLE = 19
-LE_TRANSMOG_COLLECTION_TYPE_2H_AXE = 20
-LE_TRANSMOG_COLLECTION_TYPE_2H_SWORD = 21
-LE_TRANSMOG_COLLECTION_TYPE_2H_MACE = 22
-LE_TRANSMOG_COLLECTION_TYPE_STAFF = 23
-LE_TRANSMOG_COLLECTION_TYPE_POLEARM = 24
-LE_TRANSMOG_COLLECTION_TYPE_BOW = 25
-LE_TRANSMOG_COLLECTION_TYPE_GUN = 26
-LE_TRANSMOG_COLLECTION_TYPE_CROSSBOW = 27
-LE_TRANSMOG_COLLECTION_TYPE_WARGLAIVES = 28
-LE_TRANSMOG_COLLECTION_TYPE_PAIRED = 29
 
 NUM_LE_TRANSMOG_SEARCH_TYPES = 3
 LE_TRANSMOG_SEARCH_TYPE_ITEMS = 1
