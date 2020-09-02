@@ -4,11 +4,12 @@ Enum = {
 		Available = 1,
 		SelectedTemporary = 2,
 		SelectedPermanent = 3,
+		Cooldown = 4,
 	},
 	AnimaDiversionNodeStateMeta = {
 		MinValue = 0,
-		MaxValue = 3,
-		NumValues = 4,
+		MaxValue = 4,
+		NumValues = 5,
 	},
 	AuctionHouseCommoditySortOrder = {
 		UnitPrice = 0,
@@ -31,6 +32,7 @@ Enum = {
 		EpicQuality = 8,
 		LegendaryQuality = 9,
 		ArtifactQuality = 10,
+		LegendaryCraftedItemOnly = 11,
 	},
 	AuctionHouseFilterCategory = {
 		Uncategorized = 0,
@@ -44,8 +46,8 @@ Enum = {
 	},
 	AuctionHouseFilterMeta = {
 		MinValue = 0,
-		MaxValue = 10,
-		NumValues = 11,
+		MaxValue = 11,
+		NumValues = 12,
 	},
 	AuctionHouseItemSortOrder = {
 		Bid = 0,
@@ -1836,6 +1838,11 @@ Enum = {
 		MaxValue = 4,
 		NumValues = 5,
 	},
+	RuneforgePowerState = {
+		Available = 0,
+		Unavailable = 1,
+		Invalid = 2,
+	},
 	ScriptedAnimationBehavior = {
 		None = 0,
 		TargetShake = 1,
@@ -2184,15 +2191,38 @@ Enum = {
 		MaxValue = 20,
 		NumValues = 21,
 	},
+	UIMapFlag = {
+		NoHighlight = 1,
+		ShowOverlays = 2,
+		ShowTaxiNodes = 4,
+		GarrisonMap = 8,
+		FallbackToParentMap = 16,
+		NoHighlightTexture = 32,
+		ShowTaskObjectives = 64,
+		NoWorldPositions = 128,
+		HideArchaeologyDigs = 256,
+		Deprecated = 512,
+		HideIcons = 1024,
+		HideVignettes = 2048,
+		ForceAllOverlayExplored = 4096,
+		FlightMapShowZoomOut = 8192,
+		FlightMapAutoZoom = 16384,
+	},
+	UIMapFlagMeta = {
+		MinValue = 1,
+		NumValues = 15,
+		MaxValue = 16384,
+	},
 	UIMapSystem = {
 		World = 0,
 		Taxi = 1,
 		Adventure = 2,
+		Minimap = 3,
 	},
 	UIMapSystemMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 3,
+		NumValues = 4,
 	},
 	UIMapType = {
 		Cosmic = 0,
@@ -2363,11 +2393,21 @@ Enum = {
 		Normal = 0,
 		PvPBounty = 1,
 		Torghast = 2,
+		Treasure = 3,
 	},
 	VignetteTypeMeta = {
 		MinValue = 0,
-		MaxValue = 2,
-		NumValues = 3,
+		MaxValue = 3,
+		NumValues = 4,
+	},
+	VoiceChannelErrorReason = {
+		Unknown = 0,
+		IsBattleNetChannel = 1,
+	},
+	VoiceChannelErrorReasonMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
 	},
 	VoiceChatStatusCode = {
 		Success = 0,
@@ -2624,7 +2664,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 82
+NUM_LE_FRAME_TUTORIALS = 86
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2707,6 +2747,10 @@ LE_FRAME_TUTORIAL_CAMPAIGN_LORE_TEXT = 79
 LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION = 80
 LE_FRAME_TUTORIAL_NEWCOMER_GRADUATION_REMINDER = 81
 LE_FRAME_TUTORIAL_RUNEFORGE_LEGENDARY_CRAFT = 82
+LE_FRAME_TUTORIAL_ANIMA_DIVERSION_SPEND_ANIMA = 83
+LE_FRAME_TUTORIAL_ANIMA_DIVERSION_FILL_BAR = 84
+LE_FRAME_TUTORIAL_ANIMA_DIVERSION_ACTIVATE_LOCATION = 85
+LE_FRAME_TUTORIAL_ANIMA_DIVERSION_REINFORCE_LOCATION = 86
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1

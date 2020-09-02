@@ -454,7 +454,6 @@ local LoadOnDemand = {
 	"VoidStorageFrame",
 	"WardrobeFrame",
 	"WarfrontsPartyPoseFrame",
-	"WeeklyRewardConfirmSelectionFrame",
 	"WeeklyRewardsFrame",
 }
 
