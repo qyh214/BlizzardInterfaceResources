@@ -1229,6 +1229,7 @@ local WidgetAPI = {
 		methods = {
 			"GetContentHeight",
 			"GetHyperlinkFormat",
+			"GetTextData",
 			"SetHyperlinkFormat",
 			"SetText",
 		},

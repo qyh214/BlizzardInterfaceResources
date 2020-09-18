@@ -380,7 +380,6 @@ local LoadOnDemand = {
 	"GMChatFrame",
 	"GMChatFrameEditBox",
 	"GMChatStatusFrame",
-	"GMSurveyFrame",
 	"GarrisonBonusAreaTooltip",
 	"GarrisonBuildingFrame",
 	"GarrisonBuildingPlacer",
