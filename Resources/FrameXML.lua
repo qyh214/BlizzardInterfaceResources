@@ -1747,6 +1747,7 @@ local FrameXML = {
 	"HelpPlateBox_OnEnter",
 	"HelpPlateBox_OnLeave",
 	"HelpPlateBox_OnLoad",
+	"HelpPlateTooltip_IsShowing",
 	"HelpPlate_Button_AnimGroup_Show_OnFinished",
 	"HelpPlate_Button_OnEnter",
 	"HelpPlate_Button_OnLeave",

@@ -1729,11 +1729,12 @@ Enum = {
 		InPetBattle = 29,
 		InvalidPublicParty = 30,
 		Unknown = 31,
+		InCombat = 32,
 	},
 	QuestSessionResultMeta = {
 		MinValue = 0,
-		MaxValue = 31,
-		NumValues = 32,
+		MaxValue = 32,
+		NumValues = 33,
 	},
 	QuestTag = {
 		Group = 1,
@@ -2212,11 +2213,12 @@ Enum = {
 		ForceAllOverlayExplored = 4096,
 		FlightMapShowZoomOut = 8192,
 		FlightMapAutoZoom = 16384,
+		ForceOnNavbar = 32768,
 	},
 	UIMapFlagMeta = {
 		MinValue = 1,
-		NumValues = 15,
-		MaxValue = 16384,
+		NumValues = 16,
+		MaxValue = 32768,
 	},
 	UIMapSystem = {
 		World = 0,
