@@ -1027,6 +1027,7 @@ local WidgetAPI = {
 			"SetRotation",
 			"SetUnit",
 			"StopAnimKit",
+			"ZeroCachedCenterXY",
 		},
 	},
 	CinematicModel = {

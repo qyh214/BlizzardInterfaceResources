@@ -138,6 +138,7 @@ local Frames = {
 	"GhostFrame",
 	"GlobalFXBackgroundModelScene",
 	"GlobalFXDialogModelScene",
+	"GlobalFXMediumModelScene",
 	"GossipFrame",
 	"GroupLootContainer",
 	"GroupLootDropDown",

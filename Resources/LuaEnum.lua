@@ -868,11 +868,12 @@ Enum = {
 	CovenantAbilityType = {
 		Class = 0,
 		Signature = 1,
+		Soulbind = 2,
 	},
 	CovenantAbilityTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	CovenantType = {
 		None = 0,
@@ -1277,11 +1278,12 @@ Enum = {
 		DontShowInCalendar = 2,
 		DontDisplayEnd = 4,
 		DontDisplayBanner = 8,
+		NotAvailableClientSide = 16,
 	},
 	HolidayFlagsMeta = {
 		MinValue = 1,
-		NumValues = 4,
-		MaxValue = 8,
+		NumValues = 5,
+		MaxValue = 16,
 	},
 	IconAndTextWidgetState = {
 		Hidden = 0,
@@ -2015,11 +2017,12 @@ Enum = {
 	SubscriptionInterstitialResponseType = {
 		Clicked = 0,
 		Closed = 1,
+		WebRedirect = 2,
 	},
 	SubscriptionInterstitialResponseTypeMeta = {
 		MinValue = 0,
-		MaxValue = 1,
-		NumValues = 2,
+		MaxValue = 2,
+		NumValues = 3,
 	},
 	SubscriptionInterstitialType = {
 		Standard = 0,
@@ -2671,7 +2674,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 89
+NUM_LE_FRAME_TUTORIALS = 90
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2761,6 +2764,7 @@ LE_FRAME_TUTORIAL_ANIMA_DIVERSION_REINFORCE_LOCATION = 86
 LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_BUTTON_CALLINGS = 87
 LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_CALLINGS = 88
 LE_FRAME_TUTORIAL_9_0_JAILERS_TOWER_BUFFS = 89
+LE_FRAME_TUTORIAL_EMBER_COURT_MAP = 90
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
