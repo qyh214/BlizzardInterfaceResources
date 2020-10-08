@@ -40,6 +40,7 @@ local CVars = {
 		["auctionDisplayOnCharacter"] = {"0", true, false, "Show auction items on the dress-up paperdoll"},
 		["auctionHouseDurationDropdown"] = {"2", true, false, "The previously selected duration index in the auction house duration dropdown"},
 		["audioLocale"] = {"", false, false, "Set the game locale for audio content"},
+		["AuraDebugger"] = {"0", false, false, ""},
 		["AuraEventLog"] = {"0", false, false, ""},
 		["autoAcceptQuickJoinRequests"] = {"0", true, false, "Whether or not to auto-accept players who are trying to join your party through quick join"},
 		["autoClearAFK"] = {"1", true, false, "Automatically clear AFK when moving or chatting"},
