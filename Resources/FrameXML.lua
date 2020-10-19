@@ -4308,6 +4308,7 @@ local FrameXML = {
 	"UpdatePartyMemberBackground",
 	"UpdatePetActionHighlightMarks",
 	"UpdateProfessionButton",
+	"UpdateScaleForFit",
 	"UpdateUIPanelPositions",
 	"UpdateUIParentRelativeToDebugMenu",
 	"UsesGUID",

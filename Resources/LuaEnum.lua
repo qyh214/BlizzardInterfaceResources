@@ -1010,12 +1010,15 @@ Enum = {
 		AccountCopy = 42,
 		WeeklyRewardChest = 43,
 		GarrisonTalentTreeReset = 44,
-		Last = 45,
+		DailyReset = 45,
+		AddConduitToCollection = 46,
+		Last = 47,
+		Barbershop = 48,
 	},
 	CurrencySourceMeta = {
 		MinValue = 0,
-		MaxValue = 45,
-		NumValues = 46,
+		MaxValue = 48,
+		NumValues = 49,
 	},
 	CurrencyTokenCategoryFlags = {
 		FlagSortLast = 1,
@@ -1273,8 +1276,8 @@ Enum = {
 		Generic = 0,
 		Bastion = 1,
 		Revendreth = 2,
-		Maldraxxus = 3,
-		Ardenweald = 4,
+		Ardenweald = 3,
+		Maldraxxus = 4,
 	},
 	GarrTalentFeatureSubtypeMeta = {
 		MinValue = 0,
@@ -2070,6 +2073,15 @@ Enum = {
 		MaxValue = 6,
 		NumValues = 7,
 	},
+	SoulbindConduitTransactionType = {
+		Install = 0,
+		Uninstall = 1,
+	},
+	SoulbindConduitTransactionTypeMeta = {
+		MinValue = 0,
+		MaxValue = 1,
+		NumValues = 2,
+	},
 	SoulbindConduitType = {
 		Finesse = 0,
 		Potency = 1,
@@ -2836,7 +2848,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 90
+NUM_LE_FRAME_TUTORIALS = 91
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2927,6 +2939,7 @@ LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_BUTTON_CALLINGS = 87
 LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_CALLINGS = 88
 LE_FRAME_TUTORIAL_9_0_JAILERS_TOWER_BUFFS = 89
 LE_FRAME_TUTORIAL_EMBER_COURT_MAP = 90
+LE_FRAME_TUTORIAL_EYE_OF_JAILER = 91
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
