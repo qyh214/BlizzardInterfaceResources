@@ -1,4 +1,15 @@
 Enum = {
+	AddSoulbindConduitReason = {
+		None = 0,
+		Cheat = 1,
+		SpellEffect = 2,
+		Upgrade = 3,
+	},
+	AddSoulbindConduitReasonMeta = {
+		MinValue = 0,
+		MaxValue = 3,
+		NumValues = 4,
+	},
 	AnimaDiversionNodeState = {
 		Unavailable = 0,
 		Available = 1,
@@ -1183,6 +1194,36 @@ Enum = {
 		MinValue = -1,
 		MaxValue = 12,
 		NumValues = 14,
+	},
+	GarrAutoCombatSpellTutorialFlag = {
+		None = 0,
+		Single = 1,
+		Column = 2,
+		Row = 3,
+		All = 4,
+	},
+	GarrAutoCombatSpellTutorialFlagMeta = {
+		MinValue = 0,
+		MaxValue = 4,
+		NumValues = 5,
+	},
+	GarrAutoCombatTutorial = {
+		SelectMission = 1,
+		PlaceCompanion = 2,
+		HealCompanion = 4,
+		LevelHeal = 8,
+		BeneficialEffect = 16,
+		AttackSingle = 32,
+		AttackColumn = 64,
+		AttackRow = 128,
+		AttackAll = 256,
+		TroopTutorial = 512,
+		EnvironmentalEffect = 1024,
+	},
+	GarrAutoCombatTutorialMeta = {
+		MinValue = 1,
+		NumValues = 11,
+		MaxValue = 1024,
 	},
 	GarrAutoCombatantRole = {
 		None = 0,
@@ -2848,7 +2889,7 @@ LE_EXPANSION_LEVEL_CURRENT = 8
 LE_EXPANSION_10_0 = 9
 LE_EXPANSION_11_0 = 10
 
-NUM_LE_FRAME_TUTORIALS = 91
+NUM_LE_FRAME_TUTORIALS = 94
 LE_FRAME_TUTORIAL_TALENT = 1
 LE_FRAME_TUTORIAL_SPEC = 2
 LE_FRAME_TUTORIAL_GLYPH = 3
@@ -2940,6 +2981,9 @@ LE_FRAME_TUTORIAL_9_0_GRRISON_LANDING_PAGE_CALLINGS = 88
 LE_FRAME_TUTORIAL_9_0_JAILERS_TOWER_BUFFS = 89
 LE_FRAME_TUTORIAL_EMBER_COURT_MAP = 90
 LE_FRAME_TUTORIAL_EYE_OF_JAILER = 91
+LE_FRAME_TUTORIAL_SOULBIND_PATH_SELECT = 92
+LE_FRAME_TUTORIAL_SOULBIND_CONDUIT_INSTALL = 93
+LE_FRAME_TUTORIAL_SOULBIND_CONDUIT_LEARN = 94
 
 NUM_LE_FRAME_TUTORIAL_ACCCOUNTS = 3
 LE_FRAME_TUTORIAL_ACCCOUNT_RAF_INTRO = 1
